@@ -102,5 +102,13 @@ e2e-tools:
 	chmod +x kind-linux-amd64
 	mv kind-linux-amd64 $(KIND_PATH)
 
+e2e-tools-mac:
+	wget https://github.com/kubernetes-sigs/kind/releases/download/v0.3.0/kind-darwin-amd64
+	chmod +x kind-darwin-amd64
+	mv kind-darwin-amd64 $(KIND_PATH)
+
+e2e-run-mac:
+	e2e/run_mac.sh
+
 e2e-run: docker
 	e2e/run.sh
