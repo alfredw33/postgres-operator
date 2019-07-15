@@ -66,8 +66,10 @@ configuration:
     # db_hosted_zone: ""
     # wal_s3_bucket: ""
     # log_s3_bucket: ""
-    # kube_iam_role: ""
     aws_region: eu-central-1
+    # kube_iam_role: ""
+    # wal_gs_bucket: ""
+    # gcp_credentials: ""
     # additional_secret_mount: "some-secret-name"
     # additional_secret_mount_path: "/some/dir"
   debug:
